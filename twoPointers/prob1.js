@@ -34,10 +34,13 @@ let arr1 = [1, 2, 3, 4, 5];
 let left = 0, right = arr1.length-1;
 
 while(left < right){
-    [arr1[left], arr1[right]] = [arr1[right], arr1[left]];
-    left++;
-    right--;
+  //untill left is lesser
+  // assign left index to right and right index to left
+  // in place of 0th will be on 5 and 5 be on 0th index
+  [arr1[left], arr1[right]] = [arr1[right], arr1[left]];
+  left++; // increment to right side forward
+  right--; // increment to left side backward
 }
 console.log(arr1); //[ 5, 4, 3, 2, 1 ]
 
-//[arr1[left], arr1[right]] = [arr1[right], arr1[left]]
+//  [arr1[left], arr1[right]] = [arr1[right], arr1[left]]
