@@ -35,6 +35,7 @@ let found = false;
 //     } if(found) break;
 // };
 // console.log(found);
+// TC: n * n = O(n^2) // SC: O(1)
 
 
 console.log();
@@ -62,3 +63,5 @@ function targtSum(arr){
     return found
 };
 console.log(targtSum(arr));
+
+
