@@ -16,7 +16,7 @@
 
 */
 let s = "madam"
-let l = 0, r = s.length-1;
+let l = 0, r = s.length-1; //using two pointer
 let isPalindrome = true
 while(l < r){
 
@@ -28,16 +28,9 @@ while(l < r){
     r--;
 };
 console.log(isPalindrome);
+/*
+    Complexity
 
-
-// let left = 0,
-//   right = s.length - 1;
-
-// while (left < right) {
-//   if (s[left] !== s[right]) {
-//     console.log(false);
-//     break;
-//   }
-//   left++;
-//   right--;
-// }
+    Time: O(n)
+    Space: O(1)
+*/
