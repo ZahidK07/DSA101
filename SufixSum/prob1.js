@@ -18,3 +18,9 @@ for(let i = arr.length-2; i >= 0; i--){
 };
 console.log("  ",arr);
 console.log(suffix);
+
+for (let i = arr.length - 2; i >= 0; i--) {
+  suffix[i] = suffix[i + 1] + arr[i];
+}
+console.log("  ", arr);
+console.log(suffix);
