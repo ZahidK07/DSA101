@@ -59,10 +59,9 @@ console.log(LinearSearch(arr, target));
 console.log();
 
 //Optimized solution - Binary Search
-
 function BinarySearch(ar,tar){
 
-    // create left and right index
+    // create left and right variable to point index
     let left = 0, right = ar.length;
 
     while(left <= right){
@@ -85,3 +84,17 @@ function BinarySearch(ar,tar){
 
 };
 console.log(BinarySearch(arr, target), "<< Binary Searched");
+
+// function BinarySearch(ar, tar) {
+//   let left = 0,right = ar.length;
+
+//   while (left <= right) {
+//     let mid = Math.floor((left + right) / 2);
+//     if (ar[mid] === tar) return mid;
+//     else if (ar[mid] <= tar) left = mid + 1;
+//     else right = mid - 1;
+//   }
+
+//   return `${-1} not found`;
+// }
+// console.log(BinarySearch(arr, target), "<< Binary Searched");
